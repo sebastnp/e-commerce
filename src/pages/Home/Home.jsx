@@ -15,7 +15,7 @@ export function Home() {
         text={
           'RAOUF Products are all made to standard sizes so that you can mix and match them freely.'
         }
-        img={'../media/home/top-banner.jpg'}
+        img={'../../../media/home/top-banner.jpg'}
         alt={'top-banner'}
       />
 
@@ -27,7 +27,7 @@ export function Home() {
         text={
           'RAOUF Products are all made to standard sizes so that you can mix and match them freely.'
         }
-        img={'../media/home/bottom-banner.jpg'}
+        img={'../../../media/home/bottom-banner.jpg'}
         alt={'top-banner'}
       />
     </>
