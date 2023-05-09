@@ -1,0 +1,85 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,500&display=swap');
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* font-family: 'Comfortaa', cursive; */
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  /*todo esto para mantener el footer  y contact abajo*/
+  position: relative;
+  padding-bottom: 55rem;
+  min-height: 100vh;
+  width: 100%;
+}
+
+footer {
+  /*todo esto para mantener el footer abajo*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 16px;
+  background-color: cadetblue;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a.is-active {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

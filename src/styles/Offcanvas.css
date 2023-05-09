@@ -1,0 +1,46 @@
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  visibility: hidden;
+  transition: visibility 0s linear 0.3s;
+}
+
+.offcanvas.open {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.offcanvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.offcanvas-content {
+  position: absolute;
+  top: 0;
+  left: -50rem;
+  width: 50rem;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-out;
+}
+
+.offcanvas.open .offcanvas-content {
+  transform: translateX(50rem);
+}
+
+@media only screen and (max-width: 550px) {
+  .offcanvas.open .offcanvas-content {
+    width: 100%;
+  }
+}

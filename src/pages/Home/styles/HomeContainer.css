@@ -1,0 +1,90 @@
+/* SE PONE POR EL POSITION FIXED DEL NAVBAR*/
+.home-container {
+  /* padding-top: 12rem; */
+}
+
+.grid-container {
+  grid-gap: 1.3rem;
+  display: grid;
+  gap: 1.3rem;
+  grid-template-areas:
+    'one two four'
+    'one two four-low';
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 50rem;
+  margin-top: 1.3rem;
+}
+
+.grid-one {
+  grid-area: one;
+}
+.grid-two {
+  grid-area: two;
+}
+.grid-three {
+  grid-area: four;
+}
+.grid-three-low {
+  grid-area: four-low;
+}
+
+.feautered {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative; /*INVESTIGAR LUEGO ESTO*/
+}
+
+.lil-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0; /*NO HACE NADA?*/
+  top: 0;
+  transition: all 0.3s ease-in;
+}
+
+.feautered img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#img1:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#img2:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#img3:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#img4:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-description {
+  position: absolute;
+  bottom: 2rem;
+  color: #fff;
+  font-size: 3.8rem;
+  font-weight: 600;
+  left: 2rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .grid-container {
+    grid-template-areas:
+      'one two'
+      'four four-low';
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .main-description {
+    font-size: 2rem;
+    left: 0.5rem;
+    bottom: 1rem;
+  }
+}

@@ -1,0 +1,46 @@
+.catego-cont {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9rem;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.catego-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.catego-header_home {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.catego-header h3 {
+  font-size: 2.7rem;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.catego-header_links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap; /*responsive */
+}
+
+.catego-buttons {
+  background-color: initial;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  padding: 0.6rem 1.6rem;
+  transition: all 0.2s;
+  font-size: 1.3rem;
+}
+
+.catego-buttons:hover {
+  border: 2px solid rgba(16, 16, 16, 0.89);
+}

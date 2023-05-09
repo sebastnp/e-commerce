@@ -1,0 +1,124 @@
+.cart {
+  background: #fff;
+  height: 100vh;
+  display: none;
+  padding: 3rem 2.5rem 1.5rem;
+  position: fixed;
+  flex-direction: column;
+  display: block;
+  right: 0px;
+  top: 0px;
+  width: 50rem;
+  z-index: 999; /*revisar luego*/
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.1rem;
+}
+
+.cart-header_btn {
+  cursor: pointer;
+}
+
+.cart-body {
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+.cart-items-container {
+  margin-top: 2rem;
+  /* border: 1px solid #000; */
+  height: 70%;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 5px;
+}
+.full-cart {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 0px;
+}
+/*CONTENEDOR DEL CARRITO*/
+.cart-product {
+  border: 1px solid #717171;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 30fr 50fr 20fr;
+  width: 100%;
+}
+/*CADA PRODUCTO DEL CARRITO*/
+.cart-product-img {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+.cart-product-img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.cart-product-middle {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+.cart-product-middle-title {
+  font-weight: 600;
+}
+.cart-product-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 1.5rem;
+  font-weight: 600;
+  text-align: right;
+}
+.cart-product-right_button {
+  margin: 0 0 0 auto;
+  cursor: pointer;
+}
+
+.cart-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border-top: 2px dashed #000;
+  padding-top: 1.5rem;
+}
+.cart-info_left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.cart-info_right {
+  padding-top: 4rem;
+}
+.cart-info_right a {
+  border: 2px solid #000;
+  background-color: #f2f2f2;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cart-info_right a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .cart {
+    width: 100%;
+  }
+}

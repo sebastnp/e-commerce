@@ -1,0 +1,45 @@
+.recomm-container {
+  padding-top: 11rem;
+}
+
+.recomm-container h2 {
+  font-size: 2.6rem;
+  margin-bottom: 4.2rem;
+  font-weight: 600;
+}
+
+.product {
+  outline: 2px solid rgba(0, 0, 0, 0.205);
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+.product:hover {
+  outline: 2px solid rgba(0, 0, 0, 0.9);
+}
+
+.product-header img {
+  width: 100%;
+}
+
+.product-description {
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.product-description-price {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 1.4rem;
+}
+
+.grid-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .grid-cont {
+    grid-template-columns: 1fr 1fr;
+  }
+}

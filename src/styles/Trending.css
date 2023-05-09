@@ -1,0 +1,44 @@
+.trending-cont {
+  padding-top: 11rem;
+  position: relative;
+}
+
+.trending-cont h3 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.carousel {
+  padding: 1rem 0.6rem;
+}
+
+.trend-product {
+  outline: 2px solid rgba(0, 0, 0, 0.205);
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  margin-right: 2rem;
+}
+.trend-product:hover {
+  outline: 2px solid rgba(0, 0, 0, 0.9);
+}
+
+.trend-product_header {
+  text-align: center;
+}
+
+.trend-product_header img {
+  width: 21rem;
+}
+
+.trend-product_description {
+  font-size: 1.7rem;
+  white-space: nowrap; /*para que no de saltos de linea*/
+  padding: 1rem;
+}
+
+.trend-product_price {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+}

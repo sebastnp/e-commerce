@@ -1,0 +1,33 @@
+.new-container {
+  margin-top: 10rem;
+  height: 28rem;
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 17rem;
+}
+
+.new-container-elements h2 {
+  color: #fff;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: block;
+}
+
+.new-container-elements-form input,
+button {
+  padding: 0.7rem;
+  font-size: 1.7rem;
+}
+
+.new-container-elements-form input {
+  margin-right: 0.7rem;
+  outline: none;
+}
