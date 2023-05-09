@@ -19,7 +19,7 @@ export function Navbar() {
     <div className='navbar-container'>
       <nav className='navbar'>
         <Link to='/'>
-          <img src='../../media/imgs/LOGO.png' alt='logo page' />
+          <img src='../images/LOGO.png' alt='logo page' />
         </Link>
         {/* Contiene los Links y el icono para cerrar; el icono solo aparecerá cuando la pantalla sea pequeña */}
         <div ref={navRef} className='links responsive_nav'>
