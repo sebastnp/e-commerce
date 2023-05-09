@@ -6,6 +6,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { BsBagDash } from 'react-icons/bs'
 import styles from '../styles/Navbar.css'
 import { Link } from 'react-router-dom'
+import Logo from '../../media/imagenes/logo.png'
 
 export function Navbar() {
   const { isMenuOpen, toggleMenu } = useCart()
@@ -19,7 +20,7 @@ export function Navbar() {
     <div className='navbar-container'>
       <nav className='navbar'>
         <Link to='/'>
-          <img src='/media/imagenes/logo.png' alt='logo page' />
+          <img src={Logo} alt='logo page' />
         </Link>
         {/* Contiene los Links y el icono para cerrar; el icono solo aparecerá cuando la pantalla sea pequeña */}
         <div ref={navRef} className='links responsive_nav'>
