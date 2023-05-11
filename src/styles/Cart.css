@@ -58,8 +58,9 @@
 }
 .cart-product-img img {
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 .cart-product-middle {
   display: flex;
