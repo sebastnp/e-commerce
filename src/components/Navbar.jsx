@@ -57,8 +57,8 @@ export function Navbar() {
           {/* <BsBagDash className='cart-btn_icon' /> */}
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            width='35'
-            height='35'
+            width='30'
+            height='30'
             viewBox='0 0 24 24'
           >
             <path
@@ -74,8 +74,8 @@ export function Navbar() {
         <button className='nav-btn' onClick={showNavbar}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            width='30'
-            height='30'
+            width='25'
+            height='25'
             viewBox='0 0 448 512'
           >
             <path

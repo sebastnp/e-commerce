@@ -49,7 +49,7 @@
   display: grid;
   grid-template-columns: 30fr 40fr 30fr;
   width: 100%;
-  height: 100%;
+  height: 11rem;
 }
 /*CADA PRODUCTO DEL CARRITO*/
 .cart-product-img {
@@ -59,7 +59,7 @@
   overflow: hidden;
 }
 .cart-product-img img {
-  object-fit: contain;
+  object-fit: cover;
   max-width: 100%;
   max-height: 100%;
 }
@@ -90,9 +90,10 @@
 .cart-info {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   border-top: 2px dashed #000;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .cart-info_left {
   display: flex;
