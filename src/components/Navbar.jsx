@@ -2,11 +2,12 @@ import { React, useRef } from 'react'
 import { Cart } from './Cart'
 import { Offcanvas } from './Offcanvas'
 import { useCart } from '../hooks/useCart'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import { BsBagDash } from 'react-icons/bs'
-import styles from '../styles/Navbar.css'
+import { useScrollPosition } from '../hooks/useScrollPosition'
 import { Link } from 'react-router-dom'
+import styles from '../styles/Navbar.css'
 import Logo from '../../media/imagenes/logo.png'
+import { BsBagDash } from 'react-icons/bs'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 export function Navbar() {
   const { isMenuOpen, toggleMenu } = useCart()
@@ -16,9 +17,19 @@ export function Navbar() {
     navRef.current.classList.toggle('responsive_nav')
   }
 
+  const scrollPosition = useScrollPosition()
+
   return (
-    <div className='navbar-container'>
-      <nav className='navbar'>
+    <div
+      className={
+        scrollPosition > 120 ? 'navbar-container scrolling' : 'navbar-container'
+      }
+      id='navbar-container'
+    >
+      <nav
+        className={scrollPosition > 120 ? 'navbar scrolling' : 'navbar'}
+        id='navbar'
+      >
         <Link to='/'>
           <img src={Logo} alt='logo page' />
         </Link>

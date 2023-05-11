@@ -11,15 +11,15 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 
 function App() {
   // cada que se cambia la ruta hace scroll hacia el inicio
+  // revisar esta funcion para que solo se ejecute una unica vez
   function ScrollToTop() {
     const { pathname } = useLocation()
-
     useEffect(() => {
       window.scrollTo(0, 0)
     }, [pathname])
-
     return null
   }
+
   return (
     <CartProvider>
       <Navbar />

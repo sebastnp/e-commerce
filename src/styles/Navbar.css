@@ -4,6 +4,7 @@
   top: 0;
   z-index: 999;
   height: 12rem; /*Para que se mantenga sobre todo cuando se hace scroll*/
+  transition: all 0.3s ease;
 }
 
 .navbar {
@@ -14,7 +15,12 @@
   width: 100%;
   transition: height 0.1s linear;
   background-color: #fff;
-  transition: height 0.1s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.scrolling {
+  height: 8rem;
+  transition: all 0.3s ease;
 }
 
 .links {
