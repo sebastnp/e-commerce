@@ -53,8 +53,8 @@
 /*CADA PRODUCTO DEL CARRITO*/
 .cart-product-img {
   background-color: #fff;
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   overflow: hidden;
 }
 .cart-product-img img {
