@@ -29,6 +29,11 @@ body {
   width: 100%;
 }
 
+/*cuando abra el carrito se anade al body para que no pueda hacer scroll*/
+.no-scroll {
+  overflow: hidden;
+}
+
 footer {
   /*todo esto para mantener el footer abajo*/
   position: absolute;

@@ -13,6 +13,7 @@
 .offcanvas.open {
   visibility: visible;
   transition-delay: 0s;
+  overflow: hidden;
 }
 
 .offcanvas-overlay {

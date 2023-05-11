@@ -8,11 +8,6 @@ export function Cart({ onClose }) {
   const { state, total, removeFromCart } = useCart()
   return (
     <>
-      {/* <label htmlFor={cartCheckedBoxId} className='cart-button'>
-        <CartIcon />
-      </label>
-      <input type='checkbox' hidden id={cartCheckedBoxId} /> */}
-
       <aside className='cart'>
         <div className='cart-header'>
           <h3>Your Shopping Cart</h3>
