@@ -56,7 +56,7 @@
 .cart-product-img {
   background-color: #fff;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 11rem;
   overflow: hidden;
 }
 .cart-product-img img {
