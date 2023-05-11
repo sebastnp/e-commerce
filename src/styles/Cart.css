@@ -49,6 +49,7 @@
   display: grid;
   grid-template-columns: 30fr 40fr 30fr;
   width: 100%;
+  height: 100%;
 }
 /*CADA PRODUCTO DEL CARRITO*/
 .cart-product-img {
