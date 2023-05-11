@@ -2,7 +2,7 @@
   background: #fff;
   height: 100vh;
   display: none;
-  padding: 3rem 2.5rem 1.5rem;
+  padding: 3rem 2rem 1.5rem;
   position: fixed;
   flex-direction: column;
   display: block;
@@ -33,7 +33,7 @@
   height: 70%;
   overflow: scroll;
   overflow-x: hidden;
-  padding: 5px;
+  /* padding: 5px; */
 }
 .full-cart {
   display: flex;
@@ -47,7 +47,7 @@
   border-radius: 3px;
   background-color: #f2f2f2;
   display: grid;
-  grid-template-columns: 30fr 50fr 20fr;
+  grid-template-columns: 30fr 40fr 30fr;
   width: 100%;
 }
 /*CADA PRODUCTO DEL CARRITO*/
@@ -58,7 +58,7 @@
 }
 .cart-product-img img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
 }
 .cart-product-middle {
@@ -75,8 +75,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 2rem;
-  padding: 1.5rem;
+  font-size: 1.5rem;
+  padding: 1.5rem 1rem 1.5rem 0;
   font-weight: 600;
   text-align: right;
 }

@@ -6,8 +6,6 @@ import { useScrollPosition } from '../hooks/useScrollPosition'
 import { Link } from 'react-router-dom'
 import styles from '../styles/Navbar.css'
 import Logo from '../../media/imagenes/logo.png'
-import { BsBagDash } from 'react-icons/bs'
-import { FaBars, FaTimes } from 'react-icons/fa'
 
 export function Navbar() {
   const { isMenuOpen, toggleMenu } = useCart()
@@ -44,8 +42,8 @@ export function Navbar() {
           <button className='nav-btn nav-close-btn' onClick={showNavbar}>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              width='40'
-              height='40'
+              width='30'
+              height='30'
               viewBox='0 0 24 24'
             >
               <path
